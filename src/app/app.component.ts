@@ -84,7 +84,7 @@ export class AppComponent {
     })
     .add(
       new go.Shape(),
-      new go.Shape({ toArrow: 'Triangle', fill: 'white' })
+      new go.Shape({ toArrow: 'Triangle', fill: 'white', scale: 1.5 })
     );
 
     myDiagram.linkTemplateMap.add('Association',
@@ -104,7 +104,7 @@ export class AppComponent {
       new go.Link(linkStyle())
         .add(
           new go.Shape({ strokeDashArray: [3, 2] }),
-          new go.Shape({ toArrow: 'OpenTriangle' })
+          new go.Shape({ toArrow: 'OpenTriangle', scale: 1.5 })
         ));
 
     myDiagram.linkTemplateMap.add('Composition',
